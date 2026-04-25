@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (13.3.rel1)
+# Toolchain: GNU Tools for STM32 (12.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -60,8 +60,8 @@ all: main-build
 main-build: stm32f446xx_Drivers.elf secondary-outputs
 
 # Tool invocations
-stm32f446xx_Drivers.elf stm32f446xx_Drivers.map: $(OBJS) $(USER_OBJS) C:\Users\LENOVO\OneDrive\Desktop\STM32_PROJECTS\stm32f446xx_Drivers\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "stm32f446xx_Drivers.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\LENOVO\OneDrive\Desktop\STM32_PROJECTS\stm32f446xx_Drivers\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f446xx_Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+stm32f446xx_Drivers.elf stm32f446xx_Drivers.map: $(OBJS) $(USER_OBJS) C:\Users\Ajith\ Pinninti\Desktop\stm32f4xx_driver\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "stm32f446xx_Drivers.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Ajith Pinninti\Desktop\stm32f4xx_driver\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f446xx_Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
