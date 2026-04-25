@@ -135,6 +135,22 @@ typedef struct
     _vo uint32_t DCKCFGR2;      /*!< RCC dedicated clocks configuration register 2,       Address offset: 0x94 */
 
 } RCC_RegDef_t;
+
+
+/* ---------------Register Structure of EXTI---------------*/
+
+/* EXTI (External Interrupt) Register Definition Structure */
+
+typedef struct
+{
+	_vo uint32_t IMR;
+	_vo uint32_t EMR;
+	_vo uint32_t RTSR;
+	_vo uint32_t FTSR;
+	_vo uint32_t SWIER;
+	_vo uint32_t PR;
+}EXTI_RegDef_t;
+
 /* ---------------- Peripheral definition ( Peripheral base typecasted to xxx_RegDef_t)---------*/
 
 #define GPIOA               ((GPIO_RegDef_t*)(GPIOA_BASEADDR))
@@ -148,6 +164,7 @@ typedef struct
 
 #define RCC                 ((RCC_RegDef_t*)(RCC_BASEADDR))
 
+#define EXTI                ((EXTI_RegDef_t*)(EXTI_BASEADDR))
 /*
  * Clock Enable Macros for GPIOx Peripherals
  */
